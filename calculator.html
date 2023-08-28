@@ -1,0 +1,63 @@
+<html>
+<head>
+<script>
+function add()
+{var num1, num2, sum
+num1=parseInt(document.getElementById("num1").value);
+num2=parseInt(document.getElementById("num2").value);
+sum=num1+num2;
+document.getElementById("answer").value=sum;
+}
+
+function minus()
+{var num1, num2, sub
+num1=parseInt(document.getElementById("num1").value);
+num2=parseInt(document.getElementById("num2").value);
+sub=num1-num2;
+document.getElementById("answer").value=sub;
+}
+
+
+function reset()
+{
+document.getElementById("num1").value=" ";
+document.getElementById("num2").value=" ";
+document.getElementById("answer").value=" ";
+}
+</script>
+
+<style>
+div {
+  border: 5px solid black;
+  background-color: lightblue;
+  padding-top: 100px;
+  padding-right: 40px;
+  padding-bottom: 55px;
+  padding-left: 20px;
+  width: 200px;
+  margin: 100px;
+}
+
+.heading {
+  border-radius: 25px;
+  background: rgb(91, 221, 238);
+  padding: 16px; 
+  width: 150px;
+  height: 19px;
+}
+</style>
+
+</head>
+
+<body>
+<div>
+<h1 class="heading"><center>Calculator</center></h1>
+<p><b>Enter the 1st number :<b/> <input id="num1"></p>
+<p><b>Enter the 2nd number : </b><input id="num2"></p>
+<button onClick="add()">+</button>
+<button onClick="sub()">-</button>
+<button onClick="reset()">Clear</button>
+<p><b>Result = </b><input id="answer"></p>
+</div>
+</body>
+</html>
